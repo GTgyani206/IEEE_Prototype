@@ -1,0 +1,15 @@
+.navbar {
+  padding: 1.2rem !important;
+}
+
+.nav-item {
+  margin-right: 1rem !important;
+}
+
+.land-page {
+  height: 100vh;
+}
+
+.carousel-item {
+    height: 90vh;
+}
