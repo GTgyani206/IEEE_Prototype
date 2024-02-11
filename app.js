@@ -17,6 +17,14 @@ app.get("/announcement", (req, res) => {
   res.render("routes/announcement.ejs");
 });
 
+app.get("/announcement/login", (req,res) => {
+  res.render("routes/login.ejs");
+});
+
+app.get("/announcement/signup", (req,res) => {
+  res.render("routes/signUp.ejs");
+});
+
 app.listen(3000, () => {
   console.log("Serving on port 3000");
 });
