@@ -60,3 +60,10 @@ footer {
   color: white;
   padding: 2rem;
 }
+
+.announcement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
