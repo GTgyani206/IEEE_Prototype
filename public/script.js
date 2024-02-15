@@ -29,3 +29,29 @@ function scrollToElement(elementId) {
     element.scrollIntoView({ behavior: 'smooth' });
   }
 }
+
+
+// Sample data for the timeline
+const timelineData = [
+  { date: '2024-02-15', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+  { date: '2024-02-16', content: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
+  { date: '2024-02-17', content: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.' },
+  // Add more timeline events as needed
+];
+
+// Function to add timeline items dynamically
+function createTimelineItem(date, content) {
+  const timeline = document.getElementById('timeline');
+  const item = document.createElement('div');
+  item.className = 'timeline-item';
+  item.innerHTML = `
+      <div class="timeline-item-date">${date}</div>
+      <div class="timeline-item-content">${content}</div>
+  `;
+  timeline.appendChild(item);
+}
+
+// Populate the timeline with data
+timelineData.forEach(event => {
+  createTimelineItem(event.date, event.content);
+});

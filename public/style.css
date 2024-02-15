@@ -67,3 +67,51 @@ footer {
   align-items: center;
   padding: 1rem;
 }
+
+/*timeline*/
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.timeline-item {
+  position: relative;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #3498db;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.timeline-item-date {
+  font-size: 14px;
+  font-weight: bold;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.timeline-item-content {
+  font-size: 16px;
+  line-height: 1.6;
+}
